@@ -7,7 +7,7 @@ import warnings
 warnings.filterwarnings("ignore", message="Unverified HTTPS request is being made")
 
 # Corrected API endpoint for the server
-server_endpoint = 'https://sg1.netchlk.org:555'
+server_endpoint = 'panelurl'
 
 # Session storage for authentication
 session = None
@@ -16,8 +16,8 @@ async def authenticate():
     global session
     try:
         url = f"{server_endpoint}/login"
-        username = 'Netch'
-        password = 'Netch@5005'
+        username = ''
+        password = ''
 
         if not username or not password:
             print("Username or password not set. Please check your credentials.")
